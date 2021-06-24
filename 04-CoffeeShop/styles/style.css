@@ -1,0 +1,309 @@
+:root {
+    
+    --ff-heading: 'PT Sans', sans-serif;
+    --ff-paragraphs: 'Open Sans', sans-serif;
+    
+    --clr-primary: #9E724E;
+    --clr-secundary: #774E33;
+    --clr-darker: #383430;
+    --clr-white: white;
+    --clr-black: black;
+    --clr-grey: #e1e1e1;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--ff-paragraphs);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/*  Globales    */
+
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4 {
+    font-family: var(--ff-heading);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4.0rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+/*  Utilidades  */
+
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.center-text {
+    text-align: center;
+}
+
+.py-2 {
+    padding-top: 2rem;
+}
+
+/*  Header  */
+.webp .header {
+    background-image: url(../img/banner.webp) ;
+}
+
+.header {
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__text {
+    text-align: center;
+    color: var(--clr-white);
+    margin-top: 5rem;
+}
+@media (min-width: 768px) {
+    .header__text {
+        margin-top: 15rem;
+    }
+}
+.bar {
+    padding-top: 3rem ;
+}
+
+@media (min-width: 768px) {
+    .bar,
+    .footer-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    color: var(--clr-white);
+}
+.logo__nombre {
+    font-weight: 400;
+}
+.logo__bold {
+    font-weight: 700;
+}
+
+
+/*  NavBar  */
+
+.navbar__link {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--clr-white);
+    
+}
+.navbar {
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        gap: 3rem;        
+    }
+}
+
+/*  Main    */ 
+
+@media (min-width: 768px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entry {
+    border-bottom: 2px solid var(--clr-grey);
+    margin-bottom: 2rem;
+}
+.entry-content h4 {
+    padding-top: 1rem;
+}
+
+.entry:last-of-type {
+    border: none;
+    margin: 0;
+}
+
+/*  Buttons     */  
+
+.button {
+    display: block;
+    font-family: var(--ff-heading);
+    color: var(--clr-white);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+
+
+}
+
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;  
+        
+        /*Inline-block respeta el margin y width cuando lo pedis*/
+    }
+}
+.button:hover {
+    cursor:-moz-grabbing;
+}
+
+.button--primary {
+    background-color: var(--clr-black)
+}
+
+.button--secundary {
+    background-color: var(--clr-primary);
+}
+
+/*  SideBar   */
+.widget-courses {
+    list-style: none;
+}
+.widget-courses{
+    border-bottom: 1px solid var(--clr-grey);
+    margin-bottom: 2rem;
+    line-height: 1;
+}
+.widget-courses:last-of-type {
+    border: none;
+    margin-bottom: none;
+}
+.widget-courses__label,
+.courses__label {
+    font-family: var(--ff-heading);
+    font-weight: bold ;
+}
+.widget-courses__info,
+.courses__info {
+    font-weight: normal;
+}
+.widget-courses__label,
+.widget-courses__info {
+    font-size: 2rem;
+}
+
+/*  Footer  */
+
+
+.footer {
+    background-color: var(--clr-black);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+
+/*  Sobre Nosotros*/
+
+@media (min-width: 768px) {
+    .about-us {
+        display: grid ;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+
+/*  Course  */
+
+.courses {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--clr-grey);
+}
+@media (min-width: 768px) {
+    .courses {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+/*  Contacto    */
+
+.contact-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.form {
+    background-color: var(--clr-white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+
+}
+.field__label{
+    flex: 0 0 9rem;
+    text-align: right;
+
+}
+
+.field__input{
+    flex: 1;  /*El label no crece, ocupa su lugar, en cambio el i
+                    input va a crecer todo en el espacio que quede*/
+    border: 1px solid var(--clr-grey)
+}
+
+.field__input--textarea {
+    height: 20rem;
+}
+
+.error {
+    background-color: red;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}

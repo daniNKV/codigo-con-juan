@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="normalize" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <title>Front End Store</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="logotype">
+        </a>
+    </header>
+
+    <nav class="navbar">
+        <a class="navbar__link" href="index.html">Tienda</a>
+        <a class="navbar__link navbar__link--activo" href="nosotros.html">Nosotros</a>
+    </nav>
+
+<main class="container">
+    <h1>React JS</h1>
+
+    <div class="shirt">
+        <img class="shirt__img" src="img/3.jpg" alt="">
+
+        <div class="shirt__content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Ipsam rerum et in corporis facere cum repudiandae, quis labore. Ducimus, voluptates!
+            </p>
+
+            <form class="form">
+                <select class="form__camp">
+                    <option disabled selected>Seleccione Talla</option>
+                    <option>Chica</option>
+                    <option>Mediana</option>
+                    <option>Grande</option>
+                </select>
+
+                <input class="form__camp" type="number" placeholder="Cantidad" min="1">
+                <input class="form__submit" type="submit" value="Agregar al Carrito">
+            </form>
+        </div>
+    </div>
+
+</main>
+    
+    <footer class="footer">
+        <p class="footer__text">Front End Store || Todos los derechos Reservados 2022 &copy; </p>
+    </footer>
+</body>
+</html>
