@@ -1,19 +1,25 @@
 {
   "name": "06-festivalpage",
   "version": "1.0.0",
-  "description": "GULP SASS Festival Page",
+  "description": "Festival Page with GULP & SASS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DaniNKV/bondioDukoProyects/tree/main/06-FestivalPage"
+  },
   "keywords": [
-    "sass",
     "gulp",
+    "sass",
+    "web",
     "webdesign"
   ],
   "author": "Daniel S. Nikiforov",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0"
   }
 }
